@@ -1,0 +1,30 @@
+{
+  "name": "exercicios-backend-autenticacao-criptografia",
+  "version": "1.0.0",
+  "description": "![](https://i.imgur.com/xG74tOh.png)",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  },
+  "scripts": {
+    "dev": "nodemon ./01/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JessAlvess/exercicios-backend-autenticacao-criptografia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JessAlvess/exercicios-backend-autenticacao-criptografia/issues"
+  },
+  "homepage": "https://github.com/JessAlvess/exercicios-backend-autenticacao-criptografia#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.5"
+  }
+}
