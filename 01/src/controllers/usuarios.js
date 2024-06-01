@@ -52,6 +52,10 @@ class Usuarios {
       return res.status(500).json({ mensagem: 'Erro interno do servidor' })
     }
   }
+
+  async userInfo(req, res) {
+    return res.status(200).json(req.usuario)
+  }
 }
 
 module.exports = new Usuarios();
