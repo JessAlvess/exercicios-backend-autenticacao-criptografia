@@ -35,7 +35,7 @@ class Pokemons {
   async getPokemons(req, res) {
     try {
       const getPokemons = await pool.query(
-        "SELECT * FROM pokemons;",
+        "SELECT id, (select nome from usuarios where usuarios.id = p.usuario_id) as usuario, nome, habilidades, imagem, apelido FROM pokemons p",
       );
 
       getPokemons.rows.map((pokemons) => {
